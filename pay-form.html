@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Checkout</title>
+	<link rel="icon" href="img/icon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<link rel="stylesheet" type="text/css" href="css/pay-form.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.css" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Lora:400,700|Muli:300,400,600,700,800"
+		rel="stylesheet"
+	/>
+	<link
+		rel="stylesheet"
+		href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+		crossorigin="anonymous"
+	/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<h1>Order</h1>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-md-9">
+				<button class="accordion" id="acr1">
+					Choose a shipping address
+				</button>
+				<div class="panel">
+					<form action="#" method="post">
+						<div class="row simple-form">
+							<label for="Full name">Full name</label>
+							<input type="text" class="form-control" aria-label="Full name" aria-describedby="inputGroup-sizing-sm" placeholder="Full Name">
+						</div>
+
+						<div class="row simple-form">
+							<label for="Address line 1">Address line 1</label>
+							<input type="text" class="form-control" aria-label="Address line 1" aria-describedby="inputGroup-sizing-sm" placeholder="Street address, PO BOX, company name, c/o">
+						</div>
+
+						<div class="row simple-form">
+							<label for="Address line 2">Address line 2</label>
+							<input type="text" class="form-control" aria-label="Address line 2" aria-describedby="inputGroup-sizing-sm" placeholder="Appartment, suite, unit, building, floot, etc.">
+						</div>
+
+						<div class="row simple-form">
+							<label for="City">City</label>
+							<input type="text" class="form-control" aria-label="City" aria-describedby="inputGroup-sizing-sm"placeholder="City">
+						</div>
+
+						<div class="row simple-form">
+							<label for="State/Province/Region">State/Province/Region</label>
+							<input type="text" class="form-control" aria-label="State/Province/Region" aria-describedby="inputGroup-sizing-sm" placeholder="State/Province/Region">
+						</div>
+
+						<div class="row simple-form">
+							<label for="ZIP">ZIP</label>
+							<input type="text" class="form-control" aria-label="ZIP" aria-describedby="inputGroup-sizing-sm" placeholder="ZIP">
+						</div>
+
+						<div class="row simple-form">
+							<label for="Phone number">Phone number</label>
+							<input type="text" class="form-control" aria-label="Phone number" aria-describedby="inputGroup-sizing-sm" placeholder="Phone Number">
+						</div>
+						<p style="margin-left: -16px;">Country</p>
+						<div class="row simple-form">
+							<select style="float: left;" class="select" name="select">
+								<option selected>Uzbekistan</option>
+								<option value="1">Russia</option>
+								<option value="2">USA</option>
+								<option value="3">Neverland</option>
+							</select>
+							<div style="float: right;">
+								<input type="submit" value="Ship to this address" class="btn btn-dark btn-sm btn-block">
+							</div>
+						</div>
+					</form>
+				</div>
+				<button class="accordion" id="acr2">
+					Select a payment
+				</button>
+				<div class="panel">
+					<h5>Add a debit or credit card</h5>
+					<div class="row">
+						<div class="col-md-6">
+							<form action="" method="post">
+								<div class="row simple-form">
+									<label for="Name on Card">Name on Card</label>
+									<input type="text" class="form-control" aria-label="Name on Card" aria-describedby="inputGroup-sizing-sm" placeholder="Name on Card">
+								</div>
+								<div class="row simple-form">
+									<label for="Card Number">Card Number</label>
+									<input type="text" class="form-control" aria-label="Card Number" aria-describedby="inputGroup-sizing-sm" placeholder="8888 **** **** ****">
+								</div>
+								<div class="row simple-form">
+									<label for="Card Number">Expiary date</label>
+									<div class="col-md-3">
+										<input type="number" class="form-control" aria-label="Expiary date" aria-describedby="inputGroup-sizing-sm" value="1" min="1" max="12" step="1">
+									</div>
+									<div class="col-md-4">
+										<input type="number" class="form-control" aria-label="Expiary date" aria-describedby="inputGroup-sizing-sm" value="2019" min="1950" max="2019" step="1">
+									</div>
+								</div>
+							<input style="margin-bottom: 25px;" type="submit" value="Add your card" class="btn btn-dark btn-sm btn-block">
+							</form>
+						</div>
+						<div class="col-md-6" style="border-left: #999 1px solid">
+							<p>We accept all major credit and debit cards</p>
+							<img src="img/credit-card-icons.gif" alt="VISA, Master Card, American Express, Discover">
+						</div>
+					</div>
+				</div>
+				<button class="accordion" id="acr3">
+					Review items and shipping
+				</button>
+				<div class="panel">
+					<h5>Estimated delivery date Thursday, 9 May - Friday, 10 May</h5>
+					<div class="row">
+						<div class="col-md-5">
+							<img src="img/resized/product2.jpg" alt="Nike" class="table-img">
+						</div>
+						<div class="col-md-4">
+							<h5>Nike</h5>
+						</div>
+						<div class="col-md-3">
+							<h5 style="font-size: 24px; float: right;" class="card-price">$100</h5>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 20px;">
+						<h5 class="card-price" style="font-size: 24px">Total order: $100</h5>
+						<input style="margin-bottom: 25px;" type="submit" value="Place your Order" class="btn btn-danger btn-lg btn-block">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row">
+					<input style="margin-bottom: 25px;" type="submit" value="Place your Order" class="btn btn-danger btn-lg btn-block">
+				</div>
+				<div class="row">
+					<table>
+						<tr>
+							<td>Items</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>Shipping</td>
+							<td>$3</td>
+						</tr>
+						<tr>
+							<td>Free Shipping</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<th>Order total</th>
+							<th>$100</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight){
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
+</body>
+</html>

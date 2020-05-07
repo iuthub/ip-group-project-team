@@ -1,0 +1,55 @@
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+.accordion:after {
+	font-size: 22px;
+	font-weight: bold;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+}
+#acr1:after{
+	content: '\2460';
+}
+#acr2:after{
+	content: '\2461';
+}
+#acr3:after{
+	content: '\2462';
+}
+.active:after {
+	content: "\2796" !important;
+	font-size: 13px;
+	font-weight: lighter;
+}
+.active, .accordion:hover {
+	background-color: #ccc;
+}
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+.select {
+	padding: 6px 12px;
+	margin: 0 .25rem;
+	min-width: 500px;
+	border: 1px solid #999;
+	border-left: 3px solid #999;
+	border-radius: 5px;
+	transition: border-color .5s ease-out;
+}
+
+td{
+	padding-right: 81px;
+}
