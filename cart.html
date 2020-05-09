@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>My Cart</title>
+	<link rel="icon" href="img/icon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Lora:400,700|Muli:300,400,600,700,800"
+		rel="stylesheet"
+	/>
+	<link
+		rel="stylesheet"
+		href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+		crossorigin="anonymous"
+	/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<h1>My shopping cart</h1>
+		</div>
+		<div class="row" style="margin-top: 50px;">
+			<div class="col-md-9 table justify-content-md-left">
+				<div class="row table-header">
+					<div class="col-md-7">
+						Item
+					</div>
+					<div class="col-md-3">
+						Options
+					</div>
+					<div class="col-md-2">
+						Price
+					</div>
+				</div>
+				<!-- HERE LIST ALL ITEMS -->
+				<div class="row">
+					<div class="col-md-2">
+						<img src="img/resized/product2.jpg" alt="product1" class="table-img">
+					</div>
+					<div class="col-md-5">
+						<!-- HERE FETCH ITEM DETAIL FROM MODEL -->
+						<h3>Brand: NIKE</h3>
+						<!-- USE HERE PHP AND DELETE THIS -->
+						<p><strong>Model:</strong> detail #2</p>
+						<p><strong>Size</strong> detail #3</p>
+						<p><strong>Color</strong> detail #4</p>
+					</div>
+					<div class="col-md-3 simple-form">
+						<table>
+							<tr>
+								<td><label for="quant" style="padding-top: 23px">Quantity</label></td>
+								<td>
+									<input type="number" name="quant" min="0" max="100" step="1" value="1" style="margin-top: 20px;">
+								</td>
+							</tr>
+							<tr>
+								<td><label for="size" style="padding-top: 23px">Size</label></td>
+								<td>
+									<input type="number" name="size" min="4" max="12" step="0.5" value="4" style="margin-top: 20px;">
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-md-2">
+						<p style="padding-top: 5px; font-size: 24px" class="card-price">$100</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row" style="padding-left: 10px;">
+					<h2>Summary</h2>
+					<h2 style="margin-left: 124px; font-size: 24px" class="card-price">$100</h2>
+				</div>
+				<a href="pay-form.html" class="btn btn-danger btn-lg btn-block">Proceed to checkout</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
